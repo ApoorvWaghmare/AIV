@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="AIVPi" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/AIVPi" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../RPLidarSDK/src" />
+					<Add directory="../RPLidarSDK/include" />
+				</Compiler>
+				<Linker>
+					<Add library="/home/pi/wiringPi/wiringPi/libwiringPi.so.2.46" />
+					<Add library="pthread" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/AIVPi" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="../RPLidarSDK/src/arch/linux/net_serial.cpp" />
+		<Unit filename="../RPLidarSDK/src/arch/linux/net_socket.cpp" />
+		<Unit filename="../RPLidarSDK/src/arch/linux/timer.cpp" />
+		<Unit filename="../RPLidarSDK/src/hal/thread.cpp" />
+		<Unit filename="../RPLidarSDK/src/rplidar_driver.cpp" />
+		<Unit filename="AIVPi.cbp" />
+		<Unit filename="Bot.cpp" />
+		<Unit filename="Bot.h" />
+		<Unit filename="BotController.cpp" />
+		<Unit filename="BotController.h" />
+		<Unit filename="Lidar.cpp" />
+		<Unit filename="Lidar.h" />
+		<Unit filename="LinearMotion.cpp" />
+		<Unit filename="LinearMotion.h" />
+		<Unit filename="MotionController.cpp" />
+		<Unit filename="MotionController.h" />
+		<Unit filename="MotorController.cpp" />
+		<Unit filename="MotorController.h" />
+		<Unit filename="PositionTracker.cpp" />
+		<Unit filename="PositionTracker.h" />
+		<Unit filename="RPMCalculator.cpp" />
+		<Unit filename="RPMCalculator.h" />
+		<Unit filename="RaspPiInterface.cpp" />
+		<Unit filename="RaspPiInterface.h" />
+		<Unit filename="TCPServer.cpp" />
+		<Unit filename="TCPServer.h" />
+		<Unit filename="TurningMotion.cpp" />
+		<Unit filename="TurningMotion.h" />
+		<Unit filename="VelocityCalculator.cpp" />
+		<Unit filename="VelocityCalculator.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

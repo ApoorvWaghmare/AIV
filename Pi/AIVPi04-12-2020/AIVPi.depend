@@ -1,0 +1,81 @@
+# depslib dependency file v1.0
+1606982190 source:/home/pi/Desktop/AIV/AIVPi/BotController.cpp
+	"BotController.h"
+
+1606982190 /home/pi/Desktop/AIV/AIVPi/BotController.h
+	<iostream>
+	"RaspPiInterface.h"
+
+1607074450 source:/home/pi/Desktop/AIV/AIVPi/main.cpp
+	<iostream>
+	"Bot.h"
+
+1573024380 source:/home/pi/Desktop/AIV/AIVPi/TCPServer.cpp
+	<iostream>
+	<string.h>
+	<fcntl.h>
+	"TCPServer.h"
+
+1573024380 /home/pi/Desktop/AIV/AIVPi/TCPServer.h
+	<sys/socket.h>
+	<sys/types.h>
+	<netdb.h>
+	<netinet/in.h>
+
+1607075956 source:/home/pi/Desktop/AIV/AIVPi/Bot.cpp
+	<ctime>
+	<iostream>
+	"Bot.h"
+
+1607075720 /home/pi/Desktop/AIV/AIVPi/Bot.h
+	"TCPServer.h"
+	"LinearMotion.h"
+
+1606976925 /home/pi/Desktop/AIV/AIVPi/RaspPiInterface.h
+	<wiringPi.h>
+
+1606976925 source:/home/pi/Desktop/AIV/AIVPi/RaspPiInterface.cpp
+	"RaspPiInterface.h"
+
+1606984318 source:/home/pi/Desktop/AIV/AIVPi/VelocityCalculator.cpp
+	"VelocityCalculator.h"
+
+1606993260 /home/pi/Desktop/AIV/AIVPi/VelocityCalculator.h
+	<iostream>
+	"RPMCalculator.h"
+
+1606981905 source:/home/pi/Desktop/AIV/AIVPi/RPMCalculator.cpp
+	"RPMCalculator.h"
+	<iostream>
+
+1606981892 /home/pi/Desktop/AIV/AIVPi/RPMCalculator.h
+	<chrono>
+	"RaspPiInterface.h"
+
+1606977728 source:/home/pi/Desktop/AIV/AIVPi/PositionTracker.cpp
+	"PositionTracker.h"
+
+1606909506 /home/pi/Desktop/AIV/AIVPi/PositionTracker.h
+	<chrono>
+	"VelocityCalculator.h"
+
+1607075233 /home/pi/Desktop/AIV/AIVPi/MotorController.h
+	<iostream>
+	"RaspPiInterface.h"
+
+1607075234 source:/home/pi/Desktop/AIV/AIVPi/MotorController.cpp
+	"MotorController.h"
+
+1607074504 source:/home/pi/Desktop/AIV/AIVPi/MotionController.cpp
+	"MotionController.h"
+
+1607074717 /home/pi/Desktop/AIV/AIVPi/MotionController.h
+	"MotorController.h"
+	"PositionTracker.h"
+
+1607075491 source:/home/pi/Desktop/AIV/AIVPi/LinearMotion.cpp
+	"LinearMotion.h"
+
+1607075932 /home/pi/Desktop/AIV/AIVPi/LinearMotion.h
+	"MotionController.h"
+

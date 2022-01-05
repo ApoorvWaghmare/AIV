@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="DataUtils">
+      <UniqueIdentifier>{dc454f1c-f835-4ef4-8646-31adb122851e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry">
+      <UniqueIdentifier>{5a36f53d-31e6-4608-8bcc-b1835119dbcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{0e5e946c-8eeb-4ad3-a8c5-1d77e953a8d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{214cce2b-9478-4fc0-a7cf-9b10f12c1011}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DataUtils">
+      <UniqueIdentifier>{22d026a3-5b1b-4045-ae0d-916f287052a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Geometry">
+      <UniqueIdentifier>{b719a92c-f349-4d17-b6fb-3ab47515d8ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tools">
+      <UniqueIdentifier>{153bd835-7466-4e9c-b378-1759a2700eda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{a0407b5f-21d1-4860-9f50-ab1ddafa677d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{58a95aba-c8c9-4812-949e-a4d7f9f0c7d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sketch2D">
+      <UniqueIdentifier>{ef7c60eb-f3cc-4c0a-8cd9-cf123eb77c6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sketch2D">
+      <UniqueIdentifier>{292cc48b-8a71-428e-ae77-20a63243180c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algo">
+      <UniqueIdentifier>{94c2d2f4-d7d0-4198-bfd5-12962abe4b40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algo\GeomAlgo">
+      <UniqueIdentifier>{2d0d2b33-8524-4194-88c2-75ad0a11e2d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Algo">
+      <UniqueIdentifier>{f795f181-3f99-4d73-82f5-dc4836095395}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Algo\GeomAlgo">
+      <UniqueIdentifier>{1be813ea-fef4-445e-806f-bf75c29ce43f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\DataUtils\CUPoint3DCache.cpp">
+      <Filter>Source Files\DataUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DataUtils\CUOctreeCell.cpp">
+      <Filter>Source Files\DataUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DataUtils\CUOctree.cpp">
+      <Filter>Source Files\DataUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DataUtils\CUMeshCacheInterface.cpp">
+      <Filter>Source Files\DataUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DataUtils\CUGrid2D.cpp">
+      <Filter>Source Files\DataUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DataUtils\CUCPPoint3D.cpp">
+      <Filter>Source Files\DataUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Geometry\CUVector.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Geometry\CUTriangle3D.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Geometry\CUTriangle2D.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Geometry\CUSegment3D.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Geometry\CUSegment2D.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Geometry\CUPolyline3D.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Geometry\CUPolygon.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Geometry\CUPoint2D.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Geometry\CUPlane.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Geometry\CUGeometricalUtil.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Geometry\CUBoundingBox2D.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tools\CUUnitConversionUtil.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tools\CUTimeslice.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tools\CUReport.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tools\CUParallelProcessor.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tools\CUOctreeAssistantForPoint3D.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tools\CUGridPolygonIntersector.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tools\CUFileHandler.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tools\CUDisplayMeshAssistant.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tools\CUConverter.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tools\CUBInputOutputFile.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tools\CUBinaryIOBufferBlock.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tools\CUBinaryIOBuffer.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Geometry\CUPoint3DF.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Geometry\CUPoint3D.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Geometry\CUObliqueBoundingBox.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Geometry\CUBoundingBox3D.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tools\CUPSAssertions.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Math\CUCommonConstants.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Math\CUCostElement.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Math\CUHouseHolder.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Math\CUJacobiAlgorithm.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Math\CULUDecomposition.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Math\CUMathUtil.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Math\CUMatrix.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Math\CUMatrixOperationsUsingIntel.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Math\CUMatrixRankComputer.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Math\CUQRAlgorithm.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Math\CUSeparatingAxisTheorem.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Math\CUSketcher_LUDecomposition.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Math\CUSparseMatrix.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Math\CUSqMatrix.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Math\CUTransform2D.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Math\CUTransform3D.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tools\CUSystemInfo.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tools\CUMemoryTracker.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tools\CUMemoryManager.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tools\CUMemoryLeak.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DataUtils\CUFeature.cpp">
+      <Filter>Source Files\DataUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Sketch2D\CUSketch2D.cpp">
+      <Filter>Source Files\Sketch2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Sketch2D\CUSketchSegment2D.cpp">
+      <Filter>Source Files\Sketch2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Sketch2D\CUSketchVertex2D.cpp">
+      <Filter>Source Files\Sketch2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Algo\GeomAlgo\CUSegment2DIntersector.cpp">
+      <Filter>Source Files\Algo\GeomAlgo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Sketch2D\CUSketchCircle2D.cpp">
+      <Filter>Source Files\Sketch2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Algo\GeomAlgo\CUHatchLineCalculator.cpp">
+      <Filter>Source Files\Algo\GeomAlgo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Algo\GeomAlgo\CUHullFinder.cpp">
+      <Filter>Source Files\Algo\GeomAlgo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tools\CUDebugUtil.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Algo\GeomAlgo\CULineFitting.cpp">
+      <Filter>Source Files\Algo\GeomAlgo</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CUCacheInterface.h">
+      <Filter>DataUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CUCellDataInterface.h">
+      <Filter>DataUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CUCPPoint3D.h">
+      <Filter>DataUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CUEntityInterface.h">
+      <Filter>DataUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CUGrid2D.h">
+      <Filter>DataUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CUMeshCacheInterface.h">
+      <Filter>DataUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CUOctree.h">
+      <Filter>DataUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CUOctreeCell.h">
+      <Filter>DataUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CUPoint3DCache.h">
+      <Filter>DataUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CURenderInterface.h">
+      <Filter>DataUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUBoundingBox2D.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUGeometricalUtil.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUPlane.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUPoint2D.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUPolygon.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUPolyline3D.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUSegment2D.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUSegment3D.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUTriangle2D.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUTriangle3D.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUVector.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUBinaryIOBuffer.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUBinaryIOBufferBlock.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUBinaryIOInterface.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUBInputOutputFile.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUBlockInterface.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUCacheManager.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUConverter.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUDataHandlerInterface.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUDebugDisplayInterface.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUDisplayMeshAssistant.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUEssenceHandle.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUFileHandler.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUGridPolygonIntersector.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUOctreeAssistantForPoint3D.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUParallelProcessor.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUProgressInterface.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUReport.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUSecureUtil.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUSizeOf.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUTimeslice.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUUnitConversionUtil.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUPoint3DF.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUPoint3D.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUObliqueBoundingBox.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUBoundingBox3D.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUPSAssertions.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUPoint3DH.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUSPoint2D.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUSPoint3D.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUSPoint3DH.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUCommonConstants.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUCostElement.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUHouseHolder.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUJacobiAlgorithm.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CULUDecomposition.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUMathUtil.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUMatrix.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUMatrixOperationsUsingIntel.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUMatrixRankComputer.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUQRAlgorithm.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUSeparatingAxisTheorem.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUSketcher_LUDecomposition.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUSparseMatrix.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUSqMatrix.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUTransform2D.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUTransform3D.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUMemoryLeak.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUMemoryManager.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUMemoryTracker.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUSystemInfo.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CUSpriteVector.h">
+      <Filter>DataUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUStringUtil.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CUPtrOrderedList.h">
+      <Filter>DataUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CUFeature.h">
+      <Filter>DataUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Sketch2D\CUSketch2D.h">
+      <Filter>Sketch2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Sketch2D\CUSketchSegment2D.h">
+      <Filter>Sketch2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Sketch2D\CUSketchVertex2D.h">
+      <Filter>Sketch2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Algo\GeomAlgo\CUSegment2DIntersector.h">
+      <Filter>Algo\GeomAlgo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Sketch2D\CUSketchCircle2D.h">
+      <Filter>Sketch2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Algo\GeomAlgo\CUHatchLineCalculator.h">
+      <Filter>Algo\GeomAlgo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Algo\GeomAlgo\CUHullFinder.h">
+      <Filter>Algo\GeomAlgo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUDebugUtil.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Algo\GeomAlgo\CULineFitting.h">
+      <Filter>Algo\GeomAlgo</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

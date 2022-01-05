@@ -1,0 +1,269 @@
+# depslib dependency file v1.0
+1607079156 source:/home/pi/Desktop/AIV/AIVPi/BotController.cpp
+	<ctime>
+	<iostream>
+	"BotController.h"
+
+1607079156 /home/pi/Desktop/AIV/AIVPi/BotController.h
+	"TCPServer.h"
+	"LinearMotion.h"
+
+1611224784 source:/home/pi/Desktop/AIV/AIVPi/main.cpp
+	<iostream>
+	"BotController.h"
+
+1573024380 source:/home/pi/Desktop/AIV/AIVPi/TCPServer.cpp
+	<iostream>
+	<string.h>
+	<fcntl.h>
+	"TCPServer.h"
+
+1573024380 /home/pi/Desktop/AIV/AIVPi/TCPServer.h
+	<sys/socket.h>
+	<sys/types.h>
+	<netdb.h>
+	<netinet/in.h>
+
+1607080580 source:/home/pi/Desktop/AIV/AIVPi/Bot.cpp
+	"Bot.h"
+
+1607080437 /home/pi/Desktop/AIV/AIVPi/Bot.h
+
+1606976925 /home/pi/Desktop/AIV/AIVPi/RaspPiInterface.h
+	<wiringPi.h>
+
+1606976925 source:/home/pi/Desktop/AIV/AIVPi/RaspPiInterface.cpp
+	"RaspPiInterface.h"
+
+1607081739 source:/home/pi/Desktop/AIV/AIVPi/VelocityCalculator.cpp
+	"VelocityCalculator.h"
+
+1607080565 /home/pi/Desktop/AIV/AIVPi/VelocityCalculator.h
+	<iostream>
+	"RPMCalculator.h"
+	"Bot.h"
+
+1607757690 source:/home/pi/Desktop/AIV/AIVPi/RPMCalculator.cpp
+	"RPMCalculator.h"
+	<iostream>
+
+1606981892 /home/pi/Desktop/AIV/AIVPi/RPMCalculator.h
+	<chrono>
+	"RaspPiInterface.h"
+
+1606977728 source:/home/pi/Desktop/AIV/AIVPi/PositionTracker.cpp
+	"PositionTracker.h"
+
+1606909506 /home/pi/Desktop/AIV/AIVPi/PositionTracker.h
+	<chrono>
+	"VelocityCalculator.h"
+
+1607078407 /home/pi/Desktop/AIV/AIVPi/MotorController.h
+	<iostream>
+	"RaspPiInterface.h"
+
+1607769234 source:/home/pi/Desktop/AIV/AIVPi/MotorController.cpp
+	"MotorController.h"
+
+1607074504 source:/home/pi/Desktop/AIV/AIVPi/MotionController.cpp
+	"MotionController.h"
+
+1607074717 /home/pi/Desktop/AIV/AIVPi/MotionController.h
+	"MotorController.h"
+	"PositionTracker.h"
+
+1607769855 source:/home/pi/Desktop/AIV/AIVPi/LinearMotion.cpp
+	"LinearMotion.h"
+
+1607075932 /home/pi/Desktop/AIV/AIVPi/LinearMotion.h
+	"MotionController.h"
+
+1607082623 source:/home/pi/Desktop/AIV/AIVPi/TurningMotion.cpp
+	"TurningMotion.h"
+
+1607081771 /home/pi/Desktop/AIV/AIVPi/TurningMotion.h
+	"MotionController.h"
+	"Bot.h"
+
+1586434712 source:/home/pi/Desktop/AIV/RPLidarSDK/src/arch/linux/net_serial.cpp
+	"arch/linux/arch_linux.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<assert.h>
+	<errno.h>
+	<fcntl.h>
+	<time.h>
+	"hal/types.h"
+	"arch/linux/net_serial.h"
+	<sys/select.h>
+	<algorithm>
+	<asm/ioctls.h>
+	<asm/termbits.h>
+	<sys/ioctl.h>
+	<termios.h>
+	<sys/ioctl.h>
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/src/arch/linux/arch_linux.h
+	<stdio.h>
+	<stdint.h>
+	<string.h>
+	<stdlib.h>
+	<assert.h>
+	<math.h>
+	<time.h>
+	<stdarg.h>
+	<iostream>
+	<string>
+	<unistd.h>
+	<errno.h>
+	<pthread.h>
+	<sys/time.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<sys/ioctl.h>
+	<sys/select.h>
+	<time.h>
+	"timer.h"
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/src/arch/linux/timer.h
+	"hal/types.h"
+	<unistd.h>
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/src/hal/types.h
+	<stdint.h>
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/src/arch/linux/net_serial.h
+	"hal/abs_rxtx.h"
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/src/hal/abs_rxtx.h
+	"hal/types.h"
+
+1586434712 source:/home/pi/Desktop/AIV/RPLidarSDK/src/arch/linux/net_socket.cpp
+	"sdkcommon.h"
+	"../../hal/socket.h"
+	<sys/socket.h>
+	<netinet/in.h>
+	<netinet/tcp.h>
+	<arpa/inet.h>
+	<netdb.h>
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/src/sdkcommon.h
+	"arch\win32\arch_win32.h"
+	"arch/macOS/arch_macOS.h"
+	"arch/linux/arch_linux.h"
+	"hal/types.h"
+	"hal/assert.h"
+	"rplidar.h"
+	"hal/util.h"
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/src/arch/macOS/arch_macOS.h
+	<stdio.h>
+	<stdint.h>
+	<string.h>
+	<stdlib.h>
+	<assert.h>
+	<math.h>
+	<time.h>
+	<stdarg.h>
+	<iostream>
+	<string>
+	<unistd.h>
+	<errno.h>
+	<pthread.h>
+	<sys/time.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<sys/ioctl.h>
+	<time.h>
+	"arch/macOS/timer.h"
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/src/arch/macOS/timer.h
+	"rptypes.h"
+	<unistd.h>
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/include/rptypes.h
+	<stdint.h>
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/src/hal/assert.h
+	<crtdbg.h>
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/include/rplidar.h
+	<vector>
+	"hal/types.h"
+	"rplidar_protocol.h"
+	"rplidar_cmd.h"
+	"rplidar_driver.h"
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/include/rplidar_protocol.h
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/include/rplidar_cmd.h
+	"rplidar_protocol.h"
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/include/rplidar_driver.h
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/src/hal/util.h
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/src/hal/socket.h
+	<vector>
+
+1586434712 source:/home/pi/Desktop/AIV/RPLidarSDK/src/arch/linux/timer.cpp
+	"arch/linux/arch_linux.h"
+
+1586434712 source:/home/pi/Desktop/AIV/RPLidarSDK/src/hal/thread.cpp
+	"sdkcommon.h"
+	"hal/thread.h"
+	"arch/win32/winthread.hpp"
+	"arch/macOS/thread.hpp"
+	"arch/linux/thread.hpp"
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/src/hal/thread.h
+	"hal/types.h"
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/src/arch/win32/winthread.hpp
+	"sdkcommon.h"
+	<process.h>
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/src/arch/macOS/thread.hpp
+	"arch/macOS/arch_macOS.h"
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/src/arch/linux/thread.hpp
+	"arch/linux/arch_linux.h"
+	<sched.h>
+
+1586434712 source:/home/pi/Desktop/AIV/RPLidarSDK/src/rplidar_driver.cpp
+	"sdkcommon.h"
+	"hal/abs_rxtx.h"
+	"hal/thread.h"
+	"hal/types.h"
+	"hal/assert.h"
+	"hal/locker.h"
+	"hal/socket.h"
+	"hal/event.h"
+	"rplidar_driver_impl.h"
+	"rplidar_driver_serial.h"
+	"rplidar_driver_TCP.h"
+	<algorithm>
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/src/hal/locker.h
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/src/hal/event.h
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/src/rplidar_driver_impl.h
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/src/rplidar_driver_serial.h
+
+1586434712 /home/pi/Desktop/AIV/RPLidarSDK/src/rplidar_driver_TCP.h
+
+1611215694 source:/home/pi/Desktop/AIV/AIVPi/Lidar.cpp
+	"Lidar.h"
+
+1611215545 /home/pi/Desktop/AIV/AIVPi/Lidar.h
+	<iostream>
+	<signal.h>
+	<vector>
+	"rplidar.h"
+

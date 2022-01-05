@@ -1,0 +1,13 @@
+﻿  TCPClient.cpp
+e:\aiv\source code\windows\aivwin\aivwin\tcpclient.cpp(123): error C2084: function 'TCPClient::TCPClient(void)' already has a body
+  e:\aiv\source code\windows\aivwin\aivwin\tcpclient.cpp(7): note: see previous definition of '{ctor}'
+e:\aiv\source code\windows\aivwin\aivwin\tcpclient.cpp(127): error C2084: function 'TCPClient::TCPConnectionStatus TCPClient::connectToPi(void)' already has a body
+  e:\aiv\source code\windows\aivwin\aivwin\tcpclient.cpp(11): note: see previous definition of 'connectToPi'
+e:\aiv\source code\windows\aivwin\aivwin\tcpclient.cpp(193): error C2084: function 'void TCPClient::sendInt(int)' already has a body
+  e:\aiv\source code\windows\aivwin\aivwin\tcpclient.cpp(77): note: see previous definition of 'sendInt'
+e:\aiv\source code\windows\aivwin\aivwin\tcpclient.cpp(213): error C2084: function 'double TCPClient::recieveData(void)' already has a body
+  e:\aiv\source code\windows\aivwin\aivwin\tcpclient.cpp(87): note: see previous definition of 'recieveData'
+e:\aiv\source code\windows\aivwin\aivwin\tcpclient.cpp(223): error C2084: function 'void TCPClient::endConnection(void)' already has a body
+  e:\aiv\source code\windows\aivwin\aivwin\tcpclient.cpp(97): note: see previous definition of 'endConnection'
+e:\aiv\source code\windows\aivwin\aivwin\tcpclient.cpp(239): error C2084: function 'TCPClient::~TCPClient(void)' already has a body
+  e:\aiv\source code\windows\aivwin\aivwin\tcpclient.cpp(113): note: see previous definition of '{dtor}'

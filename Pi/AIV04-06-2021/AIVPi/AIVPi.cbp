@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="AIVPi" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/AIVPi" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../RPLidarSDK/src" />
+					<Add directory="../RPLidarSDK/include" />
+					<Add directory="packages/CommonUtilReq/Include" />
+					<Add directory="packages/CommonUtilReq/Src" />
+					<Add directory="packages/Cartography" />
+					<Add directory="packages/Bot" />
+					<Add directory="packages/BotController" />
+					<Add directory="packages/Communication" />
+					<Add directory="packages/MotionHandler" />
+					<Add directory="AIVPi/packages/BotController" />
+				</Compiler>
+				<Linker>
+					<Add library="/home/pi/wiringPi/wiringPi/libwiringPi.so.2.46" />
+					<Add library="pthread" />
+					<Add directory="packages/CommonUtilReq/Src" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/AIVPi" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="AIVPi/packages/PathPlanners" />
+					<Add directory="AIVPi/packages/Trackers" />
+					<Add directory="AIVPi/packages/MotionExecutors" />
+					<Add directory="AIVPi/packages/Cartographer" />
+					<Add directory="AIVPi/packages/Cartography" />
+					<Add directory="AIVPi/packages/Feedback" />
+					<Add directory="AIVPi/packages/Devices" />
+					<Add directory="AIVPi/packages/BotController" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="../RPLidarSDK/include/rplidar.h" />
+		<Unit filename="../RPLidarSDK/include/rplidar_cmd.h" />
+		<Unit filename="../RPLidarSDK/include/rplidar_driver.h" />
+		<Unit filename="../RPLidarSDK/include/rplidar_protocol.h" />
+		<Unit filename="../RPLidarSDK/include/rptypes.h" />
+		<Unit filename="../RPLidarSDK/src/arch/linux/arch_linux.h" />
+		<Unit filename="../RPLidarSDK/src/arch/linux/net_serial.cpp" />
+		<Unit filename="../RPLidarSDK/src/arch/linux/net_serial.h" />
+		<Unit filename="../RPLidarSDK/src/arch/linux/net_socket.cpp" />
+		<Unit filename="../RPLidarSDK/src/arch/linux/thread.hpp" />
+		<Unit filename="../RPLidarSDK/src/arch/linux/timer.cpp" />
+		<Unit filename="../RPLidarSDK/src/arch/linux/timer.h" />
+		<Unit filename="../RPLidarSDK/src/hal/abs_rxtx.h" />
+		<Unit filename="../RPLidarSDK/src/hal/assert.h" />
+		<Unit filename="../RPLidarSDK/src/hal/byteops.h" />
+		<Unit filename="../RPLidarSDK/src/hal/event.h" />
+		<Unit filename="../RPLidarSDK/src/hal/locker.h" />
+		<Unit filename="../RPLidarSDK/src/hal/socket.h" />
+		<Unit filename="../RPLidarSDK/src/hal/thread.cpp" />
+		<Unit filename="../RPLidarSDK/src/hal/thread.h" />
+		<Unit filename="../RPLidarSDK/src/hal/types.h" />
+		<Unit filename="../RPLidarSDK/src/hal/util.h" />
+		<Unit filename="../RPLidarSDK/src/rplidar_driver.cpp" />
+		<Unit filename="../RPLidarSDK/src/rplidar_driver_TCP.h" />
+		<Unit filename="../RPLidarSDK/src/rplidar_driver_impl.h" />
+		<Unit filename="../RPLidarSDK/src/rplidar_driver_serial.h" />
+		<Unit filename="../RPLidarSDK/src/sdkcommon.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="packages/Bot/Bot.cpp" />
+		<Unit filename="packages/Bot/Bot.h" />
+		<Unit filename="packages/Bot/Lidar.cpp" />
+		<Unit filename="packages/Bot/Lidar.h" />
+		<Unit filename="packages/Bot/MotorController.cpp" />
+		<Unit filename="packages/Bot/MotorController.h" />
+		<Unit filename="packages/Bot/ProximitySensor.cpp" />
+		<Unit filename="packages/Bot/ProximitySensor.h" />
+		<Unit filename="packages/BotController/BotProcesses.cpp" />
+		<Unit filename="packages/BotController/BotProcesses.h" />
+		<Unit filename="packages/BotController/BotUtility.cpp" />
+		<Unit filename="packages/BotController/BotUtility.h" />
+		<Unit filename="packages/Cartography/Map.cpp" />
+		<Unit filename="packages/Cartography/Map.h" />
+		<Unit filename="packages/Cartography/MapBuilder.cpp" />
+		<Unit filename="packages/Cartography/MapBuilder.h" />
+		<Unit filename="packages/Cartography/PointTransformer.cpp" />
+		<Unit filename="packages/Cartography/PointTransformer.h" />
+		<Unit filename="packages/Cartography/Scanner.cpp" />
+		<Unit filename="packages/Cartography/Scanner.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CUBoundingBox2D.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CUBoundingBox3d.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CUCPPoint3D.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CUCommonConstants.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CUGrid2D.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CUGridCell2D.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CUHouseHolder.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CULUDecomposition.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CUMathUtil.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CUMatrix.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CUPlane.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CUPoint2D.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CUPoint3D.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CUPoint3DF.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CUPolygon.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CUReport.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CUSegment2D.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CUSegment2DIntersector.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CUSegment3D.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CUSqMatrix.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CUTransform2D.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CUTransform3D.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CUTriangle2D.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CUTriangle3D.h" />
+		<Unit filename="packages/CommonUtilReq/Include/CUVector.h" />
+		<Unit filename="packages/CommonUtilReq/Src/CUBoundingBox2D.cpp" />
+		<Unit filename="packages/CommonUtilReq/Src/CUBoundingBox3d.cpp" />
+		<Unit filename="packages/CommonUtilReq/Src/CUCPPoint3D.cpp" />
+		<Unit filename="packages/CommonUtilReq/Src/CUCommonConstants.cpp" />
+		<Unit filename="packages/CommonUtilReq/Src/CUGrid2D.cpp" />
+		<Unit filename="packages/CommonUtilReq/Src/CUGridCell2D.cpp" />
+		<Unit filename="packages/CommonUtilReq/Src/CUHouseHolder.cpp" />
+		<Unit filename="packages/CommonUtilReq/Src/CULUDecomposition.cpp" />
+		<Unit filename="packages/CommonUtilReq/Src/CUMathUtil.cpp" />
+		<Unit filename="packages/CommonUtilReq/Src/CUMatrix.cpp" />
+		<Unit filename="packages/CommonUtilReq/Src/CUPlane.cpp" />
+		<Unit filename="packages/CommonUtilReq/Src/CUPoint2D.cpp" />
+		<Unit filename="packages/CommonUtilReq/Src/CUPoint3D.cpp" />
+		<Unit filename="packages/CommonUtilReq/Src/CUPoint3DF.cpp" />
+		<Unit filename="packages/CommonUtilReq/Src/CUPolygon.cpp" />
+		<Unit filename="packages/CommonUtilReq/Src/CUReport.cpp" />
+		<Unit filename="packages/CommonUtilReq/Src/CUSegment2D.cpp" />
+		<Unit filename="packages/CommonUtilReq/Src/CUSegment2DIntersector.cpp" />
+		<Unit filename="packages/CommonUtilReq/Src/CUSegment3D.cpp" />
+		<Unit filename="packages/CommonUtilReq/Src/CUSqMatrix.cpp" />
+		<Unit filename="packages/CommonUtilReq/Src/CUTransform2D.cpp" />
+		<Unit filename="packages/CommonUtilReq/Src/CUTransform3D.cpp" />
+		<Unit filename="packages/CommonUtilReq/Src/CUTriangle2D.cpp" />
+		<Unit filename="packages/CommonUtilReq/Src/CUTriangle3D.cpp" />
+		<Unit filename="packages/CommonUtilReq/Src/CUVector.cpp" />
+		<Unit filename="packages/Communication/TCPServer.cpp" />
+		<Unit filename="packages/Communication/TCPServer.h" />
+		<Unit filename="packages/MotionHandler/AstarAlgo.cpp" />
+		<Unit filename="packages/MotionHandler/AstarAlgo.h" />
+		<Unit filename="packages/MotionHandler/InPlaceRotation.cpp" />
+		<Unit filename="packages/MotionHandler/InPlaceRotation.h" />
+		<Unit filename="packages/MotionHandler/LinearMotion.cpp" />
+		<Unit filename="packages/MotionHandler/LinearMotion.h" />
+		<Unit filename="packages/MotionHandler/PolyLineExecutor.cpp" />
+		<Unit filename="packages/MotionHandler/PolyLineExecutor.h" />
+		<Unit filename="packages/MotionHandler/PolyLinePlanner.cpp" />
+		<Unit filename="packages/MotionHandler/PolyLinePlanner.h" />
+		<Unit filename="packages/MotionHandler/PositionTracker.cpp" />
+		<Unit filename="packages/MotionHandler/PositionTracker.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

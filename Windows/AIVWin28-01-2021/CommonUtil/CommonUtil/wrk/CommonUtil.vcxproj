@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B5661111-7E44-4E84-85D3-931904BEC443}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CommonUtil</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\obj\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\obj\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\output\$(Platform)\$(Configuration)\bin\</OutDir>
+    <IntDir>..\..\obj\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\obj\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\obj\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\output\$(Platform)\$(Configuration)\bin\</OutDir>
+    <IntDir>..\..\obj\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_LIB;PMK_64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\HeaderFiles\MKLWrapper;..\..\HeaderFiles\CommonUtil\Math;..\..\HeaderFiles\CommonUtil\Tools;..\..\HeaderFiles\CommonUtil\Geometry;..\..\HeaderFiles\CommonUtil\DataUtils;..\..\HeaderFiles\CommonUtil\Sketch2D;..\..\HeaderFiles\CommonUtil\Algo\GeomAlgo</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>MKLWrapper.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(OutDir);..\..\obj\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_LIB;PMK_64</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\HeaderFiles\MKLWrapper;..\..\HeaderFiles\CommonUtil\Math;..\..\HeaderFiles\CommonUtil\Tools;..\..\HeaderFiles\CommonUtil\Geometry;..\..\HeaderFiles\CommonUtil\DataUtils;..\..\HeaderFiles\CommonUtil\Sketch2D;..\..\HeaderFiles\CommonUtil\Algo\GeomAlgo</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>MKLWrapper.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);..\..\obj\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Algo\GeomAlgo\CUHatchLineCalculator.cpp" />
+    <ClCompile Include="..\src\Algo\GeomAlgo\CUHullFinder.cpp" />
+    <ClCompile Include="..\src\Algo\GeomAlgo\CULineFitting.cpp" />
+    <ClCompile Include="..\src\Algo\GeomAlgo\CUSegment2DIntersector.cpp" />
+    <ClCompile Include="..\src\DataUtils\CUCPPoint3D.cpp" />
+    <ClCompile Include="..\src\DataUtils\CUFeature.cpp" />
+    <ClCompile Include="..\src\DataUtils\CUGrid2D.cpp" />
+    <ClCompile Include="..\src\DataUtils\CUMeshCacheInterface.cpp" />
+    <ClCompile Include="..\src\DataUtils\CUOctree.cpp" />
+    <ClCompile Include="..\src\DataUtils\CUOctreeCell.cpp" />
+    <ClCompile Include="..\src\DataUtils\CUPoint3DCache.cpp" />
+    <ClCompile Include="..\src\Geometry\CUBoundingBox2D.cpp" />
+    <ClCompile Include="..\src\Geometry\CUBoundingBox3D.cpp" />
+    <ClCompile Include="..\src\Geometry\CUGeometricalUtil.cpp" />
+    <ClCompile Include="..\src\Geometry\CUObliqueBoundingBox.cpp" />
+    <ClCompile Include="..\src\Geometry\CUPlane.cpp" />
+    <ClCompile Include="..\src\Geometry\CUPoint2D.cpp" />
+    <ClCompile Include="..\src\Geometry\CUPoint3D.cpp" />
+    <ClCompile Include="..\src\Geometry\CUPoint3DF.cpp" />
+    <ClCompile Include="..\src\Geometry\CUPolygon.cpp" />
+    <ClCompile Include="..\src\Geometry\CUPolyline3D.cpp" />
+    <ClCompile Include="..\src\Geometry\CUSegment2D.cpp" />
+    <ClCompile Include="..\src\Geometry\CUSegment3D.cpp" />
+    <ClCompile Include="..\src\Geometry\CUTriangle2D.cpp" />
+    <ClCompile Include="..\src\Geometry\CUTriangle3D.cpp" />
+    <ClCompile Include="..\src\Geometry\CUVector.cpp" />
+    <ClCompile Include="..\src\Math\CUCommonConstants.cpp" />
+    <ClCompile Include="..\src\Math\CUCostElement.cpp" />
+    <ClCompile Include="..\src\Math\CUHouseHolder.cpp" />
+    <ClCompile Include="..\src\Math\CUJacobiAlgorithm.cpp" />
+    <ClCompile Include="..\src\Math\CULUDecomposition.cpp" />
+    <ClCompile Include="..\src\Math\CUMathUtil.cpp" />
+    <ClCompile Include="..\src\Math\CUMatrix.cpp" />
+    <ClCompile Include="..\src\Math\CUMatrixOperationsUsingIntel.cpp" />
+    <ClCompile Include="..\src\Math\CUMatrixRankComputer.cpp" />
+    <ClCompile Include="..\src\Math\CUQRAlgorithm.cpp" />
+    <ClCompile Include="..\src\Math\CUSeparatingAxisTheorem.cpp" />
+    <ClCompile Include="..\src\Math\CUSketcher_LUDecomposition.cpp" />
+    <ClCompile Include="..\src\Math\CUSparseMatrix.cpp" />
+    <ClCompile Include="..\src\Math\CUSqMatrix.cpp" />
+    <ClCompile Include="..\src\Math\CUTransform2D.cpp" />
+    <ClCompile Include="..\src\Math\CUTransform3D.cpp" />
+    <ClCompile Include="..\src\Sketch2D\CUSketch2D.cpp" />
+    <ClCompile Include="..\src\Sketch2D\CUSketchCircle2D.cpp" />
+    <ClCompile Include="..\src\Sketch2D\CUSketchSegment2D.cpp" />
+    <ClCompile Include="..\src\Sketch2D\CUSketchVertex2D.cpp" />
+    <ClCompile Include="..\src\Tools\CUBinaryIOBuffer.cpp" />
+    <ClCompile Include="..\src\Tools\CUBinaryIOBufferBlock.cpp" />
+    <ClCompile Include="..\src\Tools\CUBInputOutputFile.cpp" />
+    <ClCompile Include="..\src\Tools\CUConverter.cpp" />
+    <ClCompile Include="..\src\Tools\CUDebugUtil.cpp" />
+    <ClCompile Include="..\src\Tools\CUDisplayMeshAssistant.cpp" />
+    <ClCompile Include="..\src\Tools\CUFileHandler.cpp" />
+    <ClCompile Include="..\src\Tools\CUGridPolygonIntersector.cpp" />
+    <ClCompile Include="..\src\Tools\CUMemoryLeak.cpp" />
+    <ClCompile Include="..\src\Tools\CUMemoryManager.cpp" />
+    <ClCompile Include="..\src\Tools\CUMemoryTracker.cpp" />
+    <ClCompile Include="..\src\Tools\CUOctreeAssistantForPoint3D.cpp" />
+    <ClCompile Include="..\src\Tools\CUParallelProcessor.cpp" />
+    <ClCompile Include="..\src\Tools\CUPSAssertions.cpp" />
+    <ClCompile Include="..\src\Tools\CUReport.cpp" />
+    <ClCompile Include="..\src\Tools\CUSystemInfo.cpp" />
+    <ClCompile Include="..\src\Tools\CUTimeslice.cpp" />
+    <ClCompile Include="..\src\Tools\CUUnitConversionUtil.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Algo\GeomAlgo\CUHatchLineCalculator.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Algo\GeomAlgo\CUHullFinder.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Algo\GeomAlgo\CULineFitting.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Algo\GeomAlgo\CUSegment2DIntersector.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CUCacheInterface.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CUCellDataInterface.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CUCPPoint3D.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CUEntityInterface.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CUFeature.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CUGrid2D.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CUMeshCacheInterface.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CUOctree.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CUOctreeCell.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CUPoint3DCache.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CUPtrOrderedList.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CURenderInterface.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\DataUtils\CUSpriteVector.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUBoundingBox2D.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUBoundingBox3D.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUGeometricalUtil.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUObliqueBoundingBox.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUPlane.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUPoint2D.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUPoint3D.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUPoint3DF.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUPoint3DH.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUPolygon.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUPolyline3D.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUSegment2D.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUSegment3D.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUSPoint2D.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUSPoint3D.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUSPoint3DH.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUTriangle2D.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUTriangle3D.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Geometry\CUVector.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUCommonConstants.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUCostElement.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUHouseHolder.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUJacobiAlgorithm.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CULUDecomposition.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUMathUtil.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUMatrix.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUMatrixOperationsUsingIntel.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUMatrixRankComputer.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUQRAlgorithm.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUSeparatingAxisTheorem.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUSketcher_LUDecomposition.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUSparseMatrix.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUSqMatrix.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUTransform2D.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Math\CUTransform3D.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Sketch2D\CUSketch2D.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Sketch2D\CUSketchCircle2D.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Sketch2D\CUSketchSegment2D.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Sketch2D\CUSketchVertex2D.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUBinaryIOBuffer.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUBinaryIOBufferBlock.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUBinaryIOInterface.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUBInputOutputFile.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUBlockInterface.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUCacheManager.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUConverter.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUDataHandlerInterface.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUDebugDisplayInterface.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUDebugUtil.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUDisplayMeshAssistant.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUEssenceHandle.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUFileHandler.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUGridPolygonIntersector.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUMemoryLeak.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUMemoryManager.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUMemoryTracker.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUOctreeAssistantForPoint3D.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUParallelProcessor.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUProgressInterface.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUPSAssertions.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUReport.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUSecureUtil.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUSizeOf.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUStringUtil.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUSystemInfo.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUTimeslice.h" />
+    <ClInclude Include="..\..\HeaderFiles\CommonUtil\Tools\CUUnitConversionUtil.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
